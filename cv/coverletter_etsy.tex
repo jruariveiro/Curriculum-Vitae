@@ -1,0 +1,126 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+% \geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-orange}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{CA63A8}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+\name{}{Jorge Rúa Riveiro}
+\position{Systems Engineer{\enskip\cdotp\enskip}Security Expert}
+\address{Avda. Camelias 82 6A. Vigo, Spain}
+
+\mobile{(+34) 617 624 715} 
+\email{jruariveiro@gmail.com}
+% \homepage{www.abilityjob.com}
+\github{jruariveiro}
+\linkedin{jorgeruariveiro}
+\twitter{@jruariveiro}
+\skype{jruariveiro}
+% \extrainfo{extra informations}
+
+\quote{``Cogito, ergo sum."}
+
+
+%-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%	All of the below lines must be filled out
+%-------------------------------------------------------------------------------
+% The company being applied to
+\recipient
+  {Etsy Recruitment Team}
+  {66, 67 Strand Street Great, Dublin}
+% The date on the letter, default is the date of compilation
+\letterdate{\today}
+% The title of the letter
+\lettertitle{Job Application for Senior Web Operations Engineer}
+% How the letter is opened
+\letteropening{Dear Ms. Cooney,}
+% How the letter is closed
+\letterclosing{Sincerely,}
+% Any enclosures with the letter
+\letterenclosure[Attached]{Curriculum Vitae}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+\makecvheader
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\today}
+  {Jorge Rúa Riveiro.~~~·~~~Cover Letter}
+  {}
+
+% Print the title with above letter informations
+\makelettertitle
+
+%-------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvletter}
+
+\lettersection{About Me}
+
+You may think I have choosen this cover letter \& CV color scheme by random, but that's not the case. I have choosen orange for two reasons, one and most important is Etsy logo, and the other is because orange is one of the colors of Ireland's flag. Orange is also a color full of vitality, enthusiasm and fun!
+
+This is one of my main personal qualities, I love to pay attention to details. Details make the difference between good and great. Another of my qualities is playing and working as a team, as there are no losers on a winning team, and no winners on a losing team.
+
+Furthermore I have the confidence and perseverance to get things done, because is not about how many things you start, is about how many you finish, always enjoying along the way!
+
+\lettersection{Why Etsy?}
+
+Etsy is the type of company which gives me the opportunity to participate in a challenging environment, where I can learn from others and collaborate in an innovative manner.
+
+I love the culture of transparency at Etsy, where people is the most valuable asset for the company.
+
+Etsy is a great place to work, plenty of talented people from different cultures around the world.  
+
+\lettersection{Why Me?}
+
+The position of Senior Web Operations Engineer aligns with my skills and experience. I am enthusiastic about expanding my knowledge in systems performance, network protocols, security among other non-technical interesting topics!
+
+I am also the kind of critical and analytical person that is always looking for improving previously established methods, providing new solutions and ideas.
+    
+\end{cvletter}
+
+%-------------------------------------------------------------------------------
+% Print the signature and enclosures with above letter informations
+\makeletterclosing
+
+\end{document}
