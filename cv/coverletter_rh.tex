@@ -1,0 +1,126 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+% \geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-orange}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{CA63A8}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%-------------------------------------------------------------------------------
+\name{}{Jorge Rúa Riveiro}
+\position{Systems Engineer{\enskip\cdotp\enskip}Devops Expert}
+\address{Avda. Camelias 82 6A. Vigo, Spain}
+
+\mobile{(+34) 645 292 357} 
+\email{jruariveiro@gmail.com}
+% \homepage{www.abilityjob.com}
+\github{jruariveiro}
+\linkedin{jorgeruariveiro}
+\twitter{@jruariveiro}
+% \skype{jruariveiro}
+% \extrainfo{extra informations}
+
+\quote{``Cogito, ergo sum."}
+
+%-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%	All of the below lines must be filled out
+%-------------------------------------------------------------------------------
+% The company being applied to
+\recipient
+  {Red Hat Recruitment}
+  {}
+% The date on the letter, default is the date of compilation
+\letterdate{\today}
+% The title of the letter
+\lettertitle{Job Application for Openshift Support Engineer}
+% How the letter is opened
+\letteropening{Dear RedHatter,}
+% How the letter is closed
+\letterclosing{Sincerely,}
+% Any enclosures with the letter
+\letterenclosure[Attached]{Curriculum Vitae}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+\makecvheader
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\today}
+  {Jorge Rúa Riveiro.~~~·~~~Cover Letter}
+  {}
+
+% Print the title with above letter informations
+% \makelettertitle
+
+%-------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvletter}
+
+\lettersection{About Me}
+
+I joined Red Hat on May 2017 as OpenShift consultant. I was part of a great team in Santander technology group, Produban. As consultant I performed all required
+duties trying to understand our customer needs and implement best solution possible. Produban has several Openshift clusters running around the globe, running on top
+of Openstack and VMWare.
+
+When I've decided to leave my job at Red Hat was for sure one of the hardest decissions I've took in my entire life because I did not only quit a job, I also left people
+behind, some of them I consider friends. 
+   
+\lettersection{Why Red Hat?}
+
+Red Hat is an unique company, a great place to work plenty of talented people from different cultures.
+
+Also, is the type of company which gives me the opportunity to participate in a challenging environment, where I can learn from others and collaborate in an innovative manner,
+as it happens in opensource communities. Besides that, Openshift is one of the best opensource products. 
+
+\lettersection{Why Me?}
+
+The position of Openshift Support Engineer aligns with my skills and previous experience. I can be up and running in matter of few weeks since I already know most of the tools.
+    
+\end{cvletter}
+
+%-------------------------------------------------------------------------------
+% Print the signature and enclosures with above letter informations
+\makeletterclosing
+
+\end{document}
